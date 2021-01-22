@@ -112,7 +112,7 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid">
-                    <h1 class="mt-4">Stock Deliver</h1>
+                    <h1 class="mt-4">Add Stock</h1>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item active">Tables</li>
@@ -131,26 +131,37 @@
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
+                                        <form id="add-form">
+                                            <label>
+                                              Product name:
+                                              <input id="name" type="text" placeholder="Item Name">
+                                            </label>
+                                            <label>
+                                              Quantity:
+                                              <input type="number" id="quantity" name="quantity" min="1" max="100000" placeholder="Item Quantity">
+                                            </label>
+                                            <button id="add" type="submit">Add Item</button>
+                                          </form>
                                         <tr>
-                                            <th>Product Image</th>
                                             <th>Product name</th>
                                             <th>Quantity</th>
-                                            <th>Your Price</th>
-                                            <th>Grand Total</th>
+                                            <th>Stock</th>
+                                            
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td> <img src="assets/img/bottle.jpg" alt="Banner"></td>
+                                            
                                             <td>Bottle</td>
                                             <td>
                                                 <label for="quantity"></label>
                                                 <input type="number" id="quantity" name="quantity" min="1" max="100000">
                                             </td>
-                                            <td> <input type="number" id="price" name="price"></td>
-                                            <td>
-                                                <button type="button" onclick=grandtotal()>total</button></td>
+                                            
+                                            <td><button type="button" class="btn btn-danger">Remove Stock</button>                                             
+                                            </td>
+                                                
                                         </tr>
 
                                     </tbody>
