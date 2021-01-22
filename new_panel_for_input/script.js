@@ -54,6 +54,7 @@ function updateQuantity(quantityInput) {
 
     var linePrice = price * quantity;
 
+
     /* Update line price display and recalc cart totals */
     productRow.children('.product-line-price').each(function() {
         $(this).fadeOut(fadeTime, function() {
@@ -78,4 +79,14 @@ function removeItem(removeButton) {
 function get() {
     alert(quantity);
     document.getElementById('quant').outerHTML = quantity;
+}
+
+function handleSubmit() {
+
+    const Quantity = document.getElementById("qua").Value;
+    const Total = document.getElementById("totall").Value;
+    alert(Quantity);
+    alert(Total);
+    localStorage.setItem("quantit", Quantity);
+    localStorage.setItem("toat", Total);
 }

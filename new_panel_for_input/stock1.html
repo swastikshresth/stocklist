@@ -11,7 +11,7 @@
 
 <body>
     <!-- partial:index.partial.html -->
-    <h1>Shopping Cart</h1>
+    <h1>Stock List</h1>
 
     <div class="shopping-cart">
 
@@ -34,12 +34,12 @@
             </div>
             <div class="product-price">12.99</div>
             <div class="product-quantity">
-                <input type="number" value="0" min="0">
+                <input type="number" id="qua" value="0" min="0">
             </div>
             <div class="product-removal">
 
             </div>
-            <div class="product-line-price">0</div>
+            <div class="product-line-price" id="totall" value="">0</div>
         </div>
 
         <div class="product">
@@ -52,41 +52,40 @@
             </div>
             <div class="product-price">45.99</div>
             <div class="product-quantity">
-                <input type="number" value="0" min="0">
+                <input type="number" id="qua" value="0" min="0">
             </div>
             <div class="product-removal">
 
             </div>
-            <div class="product-line-price">0</div>
+            <div class="product-line-price" id="totall" value=""> 0</div>
         </div>
 
-        <div class="totals">
-            <div class="totals-item">
+        <div class=" totals ">
+            <div class="totals-item ">
                 <label>Subtotal</label>
-                <div class="totals-value" id="cart-subtotal">0</div>
+                <div class="totals-value " id="cart-subtotal ">0</div>
             </div>
-            <div class="totals-item">
+            <div class="totals-item ">
                 <label>Tax (5%)</label>
-                <div class="totals-value" id="cart-tax">3.60</div>
+                <div class="totals-value " id="cart-tax ">3.60</div>
             </div>
-            <div class="totals-item">
+            <div class="totals-item ">
                 <label>Shipping</label>
-                <div class="totals-value" id="cart-shipping">3</div>
+                <div class="totals-value " id="cart-shipping ">3</div>
             </div>
-            <div class="totals-item totals-item-total">
+            <div class="totals-item totals-item-total ">
                 <label>Grand Total</label>
-                <div class="totals-value" id="cart-total">0</div>
+                <div class="totals-value " id="cart-total ">0</div>
             </div>
 
         </div>
 
-        <button class="checkout">Checkout</button>
+        <button class="checkout " onclick="handleSubmit() ">Checkout</button>
 
     </div>
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src="./script.js"></script>
-
+    <script src="./script.js "></script>
 </body>
 
 </html>
