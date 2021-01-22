@@ -83,8 +83,8 @@ function get() {
 
 function handleSubmit() {
 
-    const Quantity = document.getElementById("qua").Value;
-    const Total = document.getElementById("totall").Value;
+    const Quantity = document.getElementById("qua").value;
+    const Total = document.getElementById("totall").value;
     alert(Quantity);
     alert(Total);
     localStorage.setItem("quantit", Quantity);
